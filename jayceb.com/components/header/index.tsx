@@ -9,8 +9,12 @@ import {
   TooltipTrigger,
   TooltipContent,
 } from "@/components/ui/tooltip";
-import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
-import { FileText, ExternalLink } from "lucide-react";
+import {
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconWritingFilled,
+} from "@tabler/icons-react";
+import { FileText } from "lucide-react";
 
 export default function Header() {
   const router = useRouter();
@@ -76,7 +80,7 @@ export default function Header() {
               <Button variant="outline" size="sm" asChild>
                 <Link href="/blog">
                   Blog
-                  <ExternalLink className="ml-1.5 h-3 w-3" />
+                  <IconWritingFilled className="ml-1.5 h-3 w-3" />
                 </Link>
               </Button>
 
